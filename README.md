@@ -5,7 +5,9 @@
 Run
 
 `yarn install`
+
 `yarn build-with-babel`
+
 `yarn build-without-babel`
 
 And check the files in the dist folder

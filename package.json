@@ -6,10 +6,16 @@
   "author": "Milanzor",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build-with-babel": "webpack --progress",
+    "build-without-babel": "webpack --progress --config webpack.nobabel.config.js",
+    "build-with-babel:production": "webpack --progress -p",
+    "build-without-babel:production": "webpack --progress --config webpack.nobabel.config.js -p"
+  },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "babel-loader": "8.0.0-beta.0",
     "webpack": "^3.10.0"
   }
 }

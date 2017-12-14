@@ -17,3 +17,13 @@ You will see that the export `square` is marked as an unused harmony export in t
 Compare that to `dist/bundle-with-babel.js`, you'll see that babel transpiled my code, resulting in webpack not marking the `square` function as unused.
 
 # What am I doing wrong?
+
+I found it!
+
+# Thanks
+
+Thanks to loganfsmyth (https://stackoverflow.com/users/785065/loganfsmyth) for answering my question => https://stackoverflow.com/questions/47663486/webpack-3-babel-and-tree-shaking-not-working
+
+# Solution
+
+Tell Babel not to transpile module syntax, so webpack can still understand the original module import and exports and tree-shake accordingly.
